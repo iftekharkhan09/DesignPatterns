@@ -1,11 +1,15 @@
 package com.src.design.creational.factory;
 
 public class Shapefactory {
-	public Shape getInstance(Shape shape) {
-		if (shape instanceof Circle)
-			return new Circle();
-		else if (shape instanceof Rectangle)
+	public static Shape getInstance(ShapeType shapeType) {
+		switch (shapeType) {
+		case RECTANGLE:
 			return new Rectangle();
+		case CIRCLE:
+			return new Circle();
+		default:
+			break;
+		}
 		return null;
 	}
 }
