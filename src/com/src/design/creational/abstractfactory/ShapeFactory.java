@@ -13,5 +13,4 @@ public class ShapeFactory extends AbstractFactory {
 	Color getColor(Color color) {
 		return null;
 	}
-
 }
