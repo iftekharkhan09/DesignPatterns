@@ -6,7 +6,7 @@ public class AmexCreditCard extends CardStrategy {
 	boolean isValid(String cardNumber) {
 		if (cardNumber.length() == 15)
 			return true;
-		if (cardNumber.startsWith("34") || cardNumber.startsWith("32"))
+		if (cardNumber.startsWith("344") || cardNumber.startsWith("32"))
 			return true;
 		if (lunhAlgo(cardNumber))
 			return true;
