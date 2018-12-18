@@ -5,7 +5,7 @@ public class MainClass {
 		DirectorHandler director = new DirectorHandler();
 		VPHandler vp = new VPHandler();
 		CEOHandler ceo=new CEOHandler();
-		Request request = new Request(8900.0, RequestType.CONFERENCE);
+		Request request = new Request(89000.0, RequestType.CONFERENCE);
 
 		director.setSuccessor(vp);
 		vp.setSuccessor(ceo);
